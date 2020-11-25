@@ -1,14 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TexasRangers.MainTabbedPage">
+             x:Class="TexasRangers.MainTabbedPage"
+             SelectedTabColor="#0a306d">
     <ContentPage Title="Menu">
-        <StackLayout>
-            <Image Source="texas_ranger_logo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-            <!--<Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />-->
-        </StackLayout>
+        <ScrollView>
+            <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+                <Image Source="texas_rangers_logo.png" />
+                <Label Text="&quot;CHUCK NORRIS&quot;" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Food Menu" x:Name="btnFood" HorizontalOptions="FillAndExpand" BackgroundColor="#0a306d" TextColor="White" Clicked="btnFood_Clicked"/>
+                    
+                    <Button Text="Drinks Menu" x:Name="btnDrinks" HorizontalOptions="FillAndExpand" BackgroundColor="#0a306d" TextColor="White" Clicked="btnDrinks_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage>
 
     <ContentPage Title="Contact">

@@ -3,6 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TexasRangers.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#0a306d"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

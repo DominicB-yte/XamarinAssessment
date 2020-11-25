@@ -16,5 +16,15 @@ namespace TexasRangers
         {
             InitializeComponent();
         }
+        
+        private async void btnFood_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FoodsPage());
+        }
+
+        private async void btnDrinks_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DrinksPage());
+        }
     }
 }
