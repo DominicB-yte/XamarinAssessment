@@ -8,11 +8,15 @@
 
     <!-- Set theme colors from https://aka.ms/material-colors -->
     <!-- colorPrimary is used for the default action bar background -->
-    <!--<item name="colorPrimary">#2196F3</item>-->
+        <item name="colorPrimary">#0a306d</item>
     <!-- colorPrimaryDark is used for the status bar -->
     <!--<item name="colorPrimaryDark">#1976D2</item>-->
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
     <!--<item name="colorAccent">#FF4081</item>-->
+
+    <!--<style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+      <item name="tabBackground">@drawable/tab_background</item>
+    </style>-->
   </style>
 </resources>

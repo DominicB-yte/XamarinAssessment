@@ -3,10 +3,206 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TexasRangers.FoodsPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="#0a306d">
+                    <Label Text="Food Menu"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand" 
+                    FontSize="36"
+                    TextColor="White"
+                    Margin="0, -5, 0, -5"/>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Sizzling Steak" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                            <Label Text="$1.65" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="Mushrooms, Olives, Celery, Choice of Potatoes, and Coffee" 
+                                   HorizontalOptions="StartAndExpand"
+                                   TextColor="White"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Planked Steak" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                            <Label Text="$1.65" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="Mushrooms, Hot Peppers, Olives, Celery, Choice of Potatoes, Grilled Onions, and Coffee" 
+                                   HorizontalOptions="StartAndExpand"
+                                   TextColor="White"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Filet Migon" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                            <Label Text="$1.35" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="Olives, Celery, Mushrooms, Choice of Potatoes, Grilled Onions, and Coffee" 
+                                   HorizontalOptions="StartAndExpand"
+                                   TextColor="White"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Big Small Steak" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                            <Label Text="$.95" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="Tomato Juice, Salad, Choice of Potatoes, Grilled Onions, and Coffee" 
+                                   HorizontalOptions="StartAndExpand"
+                                   TextColor="White"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Broiled Pork Chops" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                            <Label Text="$.70" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="Tomato Juice, Salad, Potatoes, Apple Sauce, and Coffee" 
+                                   HorizontalOptions="StartAndExpand"
+                                   TextColor="White"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Large Lamb Chops" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                            <Label Text="$.70" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="Tomato Juice, Salad, Potatoes, and Coffee"
+                                   HorizontalOptions="StartAndExpand"
+                                   TextColor="White"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Half Barbecued Chicken" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                            <Label Text="$.65" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="French Fried Potatoes, Cole Slaw, Bread, Butter, and Coffee" 
+                                   HorizontalOptions="StartAndExpand"
+                                   TextColor="White"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Half Fried Chicken" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                            <Label Text="$.65" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="French Fried Potatoes, Cole Slaw, Bread, Butter, and Coffee" 
+                                   HorizontalOptions="StartAndExpand"
+                                   TextColor="White"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Barbecued Ribs" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                            <Label Text="$.50" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="French Fried Potatoes, Cole Slaw, Bread, Butter, and Coffee" 
+                                   HorizontalOptions="StartAndExpand"
+                                   TextColor="White"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
