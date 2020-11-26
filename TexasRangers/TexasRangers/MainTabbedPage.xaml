@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TexasRangers.MainTabbedPage">
     <ContentPage Title="Menu">
-        <StackLayout VerticalOptions="StartAndExpand" 
+        <StackLayout VerticalOptions="CenterAndExpand" 
                      HorizontalOptions="CenterAndExpand" 
                      Padding="10, 0, 10, 0">
             <Image Source="texas_rangers_logo.png" />
-            <Label Text="&quot;CHUCK NORRIS&quot;"
+            <Label Text="{Binding value}"
                    HorizontalOptions="CenterAndExpand" 
                    VerticalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center"
@@ -32,10 +32,14 @@
 
     <ContentPage Title="Contact">
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+                <Image Source="texas_rangers_bar.jpg"/>
+                <Label Text="131 Queen Street, Auckland CBD, Auckland 1010&#10;09 227 4383&#10;hello@texasrangers.co.nz"
+                       TextColor="#7b212d"
+                       FontSize="Medium" 
+                       Padding="20,20,0,0"/>
+            <WebView Source="https://maps.apple.com/place?address=131%20queen%20street,%20Auckland,%20Auckland%201010,%20New%20Zealand"
+                         VerticalOptions="FillAndExpand"/>
+            </StackLayout>
     </ContentPage>
 
     <ContentPage Title="Reservation">
