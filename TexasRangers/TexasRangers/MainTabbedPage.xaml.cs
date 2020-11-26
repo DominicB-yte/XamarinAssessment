@@ -15,7 +15,6 @@ namespace TexasRangers
     public partial class MainTabbedPage : TabbedPage
     {
         private RestClient client;
-        private List<ChuckNorris> ChuckNorris;
         public MainTabbedPage()
         {
             InitializeComponent();
@@ -42,6 +41,32 @@ namespace TexasRangers
             chuck = JsonConvert.DeserializeObject<ChuckNorris>(response.Content);
 
             return chuck;
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            listView.ItemsSource = await App.Database.GetNotesAsync();
+        }
+
+        async void OnReserveAddedClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ReservationPage
+            {
+                BindingContext = new Reservations()
+            });
+        }
+
+        async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                await Navigation.PushAsync(new ReservationPage
+                {
+                    BindingContext = e.SelectedItem as Reservations
+                });
+            }
         }
     }
 }

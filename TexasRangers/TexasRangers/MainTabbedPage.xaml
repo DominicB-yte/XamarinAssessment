@@ -44,9 +44,42 @@
 
     <ContentPage Title="Reservation">
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="listView"
+                  Margin="20"
+                  ItemSelected="OnListViewItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BorderColor="#7b212d">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding name}" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="#0a306d"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                                        <Label Text="{Binding peopleNum}" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="#0a306d"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                                    </StackLayout>
+                                    <StackLayout>
+                                        <Label Text="{Binding reDate, StringFormat='{0:yyyy/MM/dd}'}" 
+                                   HorizontalOptions="StartAndExpand"
+                                   TextColor="#7b212d"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                        <!--<TextCell Text="{Binding reDate, StringFormat='{0:yyyy/MM/dd}'}"
+                              Detail="{Binding peopleNum}" 
+                              TextColor="#7b212d" 
+                              DetailColor="#0a306d"/>-->
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="addReserve" Text="Add Reservations" Clicked="OnReserveAddedClicked" BackgroundColor="#7b212d" TextColor="White"/>
         </StackLayout>
     </ContentPage>
 </TabbedPage>

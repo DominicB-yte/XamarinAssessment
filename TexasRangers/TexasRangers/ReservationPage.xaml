@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TexasRangers.ReservationPage">
+    <ScrollView>
+        <StackLayout Margin="20">
+            <Label Text="Reservation Date"/>
+            <DatePicker Date="{Binding reDate}" MinimumDate="{Binding minDate}"/>
+
+            <Label Text="Reservation Time"/>
+            <TimePicker Time="{Binding reTime}"/>
+            
+            <Label Text="Number of People"/>
+            <Editor Placeholder="3" Keyboard="Numeric"
+                Text="{Binding peopleNum}" />
+
+            <Label Text="Name of Reserver"/>
+            <Editor Placeholder="John Doe" Text="{Binding name}" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Save" 
+                    Clicked="OnSaveButtonClicked" />
+                <Button Grid.Column="1"
+                    Text="Delete" 
+                    Clicked="OnDeleteButtonClicked"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
