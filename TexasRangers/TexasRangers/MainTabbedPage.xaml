@@ -27,7 +27,11 @@
                         BackgroundColor="#0a306d" 
                         TextColor="White" Clicked="btnDrinks_Clicked"/>
             </StackLayout>
-            <Label Text="© 2020 Texas Rangers LLC" VerticalOptions="EndAndExpand"/>
+            <Label Text="© 2020 Texas Rangers LLC">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="CrashReport" Tapped="CrashReport_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
         </StackLayout>
     </ContentPage>
 

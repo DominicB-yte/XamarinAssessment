@@ -8,6 +8,7 @@ using Xamarin.Forms.Xaml;
 using TexasRangers.Model;
 using RestSharp;
 using Newtonsoft.Json;
+using Microsoft.AppCenter.Crashes;
 
 namespace TexasRangers
 {
@@ -67,6 +68,11 @@ namespace TexasRangers
                     BindingContext = e.SelectedItem as Reservations
                 });
             }
+        }
+
+        private void CrashReport_Tapped(object sender, EventArgs e)
+        {
+            Crashes.GenerateTestCrash();
         }
     }
 }
