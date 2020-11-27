@@ -27,6 +27,7 @@
                         BackgroundColor="#0a306d" 
                         TextColor="White" Clicked="btnDrinks_Clicked"/>
             </StackLayout>
+            <Label Text="© 2020 Texas Rangers LLC" VerticalOptions="EndAndExpand"/>
         </StackLayout>
     </ContentPage>
 
