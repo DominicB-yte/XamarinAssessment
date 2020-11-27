@@ -8,7 +8,7 @@ using Xamarin.UITest.Queries;
 namespace TexasRangers.UITest
 {
     [TestFixture(Platform.Android)]
-    [TestFixture(Platform.iOS)]
+    //[TestFixture(Platform.iOS)]
     public class Tests
     {
         IApp app;
@@ -26,10 +26,10 @@ namespace TexasRangers.UITest
         }
 
         [Test]
-        public void WelcomeTextIsDisplayed()
+        public void TextIsDisplayed()
         {
             AppResult[] results = app.WaitForElement(c => c.Marked("© 2020 Texas Rangers LLC"));
-            app.Screenshot("Welcome screen.");
+            app.Screenshot("Screenshot1");
 
             Assert.IsTrue(results.Any());
         }
