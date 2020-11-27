@@ -50,27 +50,23 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Frame BorderColor="#7b212d">
-                                <StackLayout>
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="{Binding name}" 
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding name}" 
                                HorizontalOptions="StartAndExpand"
                                TextColor="#0a306d"
-                               FontSize="Large"
                                FontAttributes="Bold"/>
-                                        <Label Text="{Binding peopleNum}" 
+                                    <Label Text="{Binding peopleNum}" 
                                HorizontalOptions="EndAndExpand"
                                TextColor="#0a306d"
-                               FontSize="Large"
                                FontAttributes="Bold"/>
-                                    </StackLayout>
-                                    <StackLayout>
-                                        <Label Text="{Binding reDate, StringFormat='{0:yyyy/MM/dd}'}" 
+                                </StackLayout>
+                                <StackLayout>
+                                    <Label Text="{Binding reDate, StringFormat='{0:yyyy/MM/dd}'}" 
                                    HorizontalOptions="StartAndExpand"
                                    TextColor="#7b212d"/>
-                                    </StackLayout>
                                 </StackLayout>
-                            </Frame>
+                            </StackLayout>
                         </ViewCell>
                         <!--<TextCell Text="{Binding reDate, StringFormat='{0:yyyy/MM/dd}'}"
                               Detail="{Binding peopleNum}" 

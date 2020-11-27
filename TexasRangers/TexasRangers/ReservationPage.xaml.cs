@@ -15,9 +15,6 @@ namespace TexasRangers
         public ReservationPage()
         {
             InitializeComponent();
-
-            var minDate = DateTime.Now;
-            BindingContext = minDate;
         }
 
         async void OnSaveButtonClicked(object sender, EventArgs e)
