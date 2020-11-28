@@ -3,36 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TexasRangers.MainTabbedPage">
     <ContentPage Title="Menu">
-        <StackLayout VerticalOptions="CenterAndExpand" 
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand" 
                      HorizontalOptions="CenterAndExpand" 
                      Padding="10, 0, 10, 0">
-            <Image Source="texas_rangers_logo.png" />
-            <Label Text="{Binding value}"
-                   HorizontalOptions="CenterAndExpand" 
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"
-                   FontSize="Large" 
-                   TextColor="#7b212d"/>
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Food Menu" 
-                        x:Name="btnFood" 
-                        HorizontalOptions="FillAndExpand" 
-                        BackgroundColor="#0a306d" 
-                        TextColor="White" 
-                        Clicked="btnFood_Clicked"/>
+                <Image Source="texas_rangers_logo.png" />
+                <Label Text="{Binding value}"
+                       HorizontalOptions="CenterAndExpand" 
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalTextAlignment="Center"
+                       FontSize="Large" 
+                       TextColor="#7b212d"/>
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Food Menu" 
+                            x:Name="btnFood" 
+                            HorizontalOptions="FillAndExpand" 
+                            BackgroundColor="#0a306d" 
+                            TextColor="White" 
+                            Clicked="btnFood_Clicked"/>
 
-                <Button Text="Drinks Menu" 
-                        x:Name="btnDrinks"
-                        HorizontalOptions="FillAndExpand" 
-                        BackgroundColor="#0a306d" 
-                        TextColor="White" Clicked="btnDrinks_Clicked"/>
+                    <Button Text="Drinks Menu" 
+                            x:Name="btnDrinks"
+                            HorizontalOptions="FillAndExpand" 
+                            BackgroundColor="#0a306d" 
+                            TextColor="White" Clicked="btnDrinks_Clicked"/>
+                </StackLayout>
+                <Label Text="© 2020 Texas Rangers LLC">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="CrashReport" Tapped="CrashReport_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
             </StackLayout>
-            <Label Text="© 2020 Texas Rangers LLC">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer x:Name="CrashReport" Tapped="CrashReport_Tapped"/>
-                </Label.GestureRecognizers>
-            </Label>
-        </StackLayout>
+        </ScrollView>
     </ContentPage>
 
     <ContentPage Title="Contact">

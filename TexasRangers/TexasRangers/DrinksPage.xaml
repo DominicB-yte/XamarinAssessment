@@ -3,10 +3,471 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TexasRangers.DrinksPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="#0a306d">
+                    <Label Text="Drinks Menu"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand" 
+                    FontSize="36"
+                    TextColor="White"
+                    Margin="0, -5, 0, -5"/>
+                </Frame>
+                <StackLayout>
+                    <Label Text="Bonded Whiskey" 
+                           HorizontalOptions="CenterAndExpand"
+                           TextColor="#7b212d"
+                           FontSize="48"
+                           Padding="0, 10, 0, 10"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Old Taylor" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$40" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Old Overbolt" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$40" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Old Grand Dad" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$40" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Old Crow" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$35" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Old Republic" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$35" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <StackLayout>
+                    <Label Text="Bourbon Whiskey" 
+                           HorizontalOptions="CenterAndExpand"
+                           TextColor="#7b212d"
+                           FontSize="48"
+                           Padding="0, 10, 0, 10"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Four Roses" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$35" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Golden Wedding" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$30" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Old Oscar Pepper" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$30" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Bond and Lillard" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$30" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Ten High" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$25" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <StackLayout>
+                    <Label Text="Blended Whiskey" 
+                           HorizontalOptions="CenterAndExpand"
+                           TextColor="#7b212d"
+                           FontSize="48"
+                           Padding="0, 10, 0, 10"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Canadian Club" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$40" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Seagram's V.O.C" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$40" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Seagram's 7 Crown" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$35" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Seagram's 5 Crown" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$35" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Lord Calvert" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$40" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <StackLayout>
+                    <Label Text="Rye Whiskey" 
+                           HorizontalOptions="CenterAndExpand"
+                           TextColor="#7b212d"
+                           FontSize="48"
+                           Padding="0, 10, 0, 10"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Old Quaker" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$50" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Golden Wedding" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$30" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Paul Jones" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$30" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Town Tavern" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$20" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Green River" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$25" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <StackLayout>
+                    <Label Text="Wines" 
+                           HorizontalOptions="CenterAndExpand"
+                           TextColor="#7b212d"
+                           FontSize="48"
+                           Padding="0, 10, 0, 10"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Tokay" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$20" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Port" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$20" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Sherry" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$20" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Muscatel" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$20" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Virginia Dare Sauternes" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$25" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <StackLayout>
+                    <Label Text="Bottled Beer" 
+                           HorizontalOptions="CenterAndExpand"
+                           TextColor="#7b212d"
+                           FontSize="48"
+                           Padding="0, 10, 0, 10"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Stroh's" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$30" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Budweiser" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$30" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Blue Ribbon" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$30" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0a306d">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Carling's Ale" 
+                               HorizontalOptions="StartAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                        <Label Text="$25" 
+                               HorizontalOptions="EndAndExpand"
+                               TextColor="White"
+                               FontSize="Large"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
